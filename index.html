@@ -1,12 +1,19 @@
 ---
-title: Blogging like a Hacker
+title: Donk's Thoughts
 ---
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8"> 
     <title>{{ page.title }}</title>
 </head>
 <body>
+    <div class="jumbotron">
+        <h1 style="text-align: center"> Welcome to My Blog </h1>
+        <p style="text-align: center">...Not much here yet</p>
+    </div>
 
     <ul>
         {% for post in site.posts %}
@@ -16,10 +23,6 @@ title: Blogging like a Hacker
             </li>
         {% endfor %}
     </ul>
-
-    <p>Hello World</p>
-    <p>Is this working?</p>
-
 
 </body>
 </html>
