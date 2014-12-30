@@ -2,7 +2,91 @@
 title: Donk's Thoughts
 layout: default
 ---
+<div class="container">
+    <div class="row">
+        <section id="content" class="col-md-9">
+            <article id="about_me">
+                <h1 class="page-header">About Me</a></h1>
 
-<h1>About Me</h1>
+                <p>Hi, my name is Jon and I'm a fourth year computer science major at UC Berkeley. I love anything related to programming and try to actively find new and interesting projects online. When I'm not at the computer, I enjoy skateboarding, reading books, and rock climbing. My friend and I worked to create a skate media company called Local Access Only for fun!
 
-<p>Hi, my name is Jon and I'm a fourth year computer science major at UC Berkeley. I love anything related to programming and try to actively find new and interesting projects online. When I'm not at the computer, I enjoy skateboarding, reading books, and rock climbing. My friend and I worked to create a skate media company called Local Access Only for fun!
+            </article>
+
+            <article id="projects">
+                <h1 class="page-header">Projects</a></h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate risus a dolor suscipit ultricies. Nam ac erat augue. Phasellus auctor mi eget sem egestas, non pulvinar libero tristique. Duis facilisis at mauris in vulputate. Pellentesque eu arcu vitae leo pharetra blandit a ut arcu. Vestibulum turpis magna, iaculis vel tortor at, ornare ultricies enim. Mauris quis leo nec diam volutpat scelerisque in quis tellus. Pellentesque scelerisque neque dui, et ultricies urna euismod quis. Suspendisse at rhoncus leo. Maecenas fermentum nibh ipsum, id sagittis arcu pharetra id. Maecenas mauris mi, molestie quis pulvinar et, euismod sed neque.
+
+Morbi eu nibh ac augue scelerisque ultricies. Phasellus ac nulla a tellus elementum porttitor dictum ac dui. Aliquam condimentum ipsum et lobortis pellentesque. Mauris molestie, elit non vestibulum lacinia, elit libero hendrerit felis, eget imperdiet nibh magna non dui. Praesent a augue enim. Nulla placerat interdum odio, ac molestie lacus luctus ac. Aliquam facilisis ex sit amet viverra placerat. Cras molestie rutrum sapien fermentum euismod. Etiam fermentum non libero ut vestibulum. Ut blandit, dolor sed condimentum ultrices, libero ante elementum purus, ut rhoncus massa leo at eros. Etiam porta in nibh sit amet dapibus.
+
+Ut malesuada porta tellus, ac hendrerit dui congue eu. Phasellus nec odio risus. Sed vitae lobortis magna. Aenean non justo non lorem porttitor mollis. Aliquam erat volutpat. Nullam dolor velit, feugiat ut fermentum ut, blandit eget est. Nam nec auctor turpis, id laoreet tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vulputate dui ac diam vestibulum ullamcorper.
+
+Cras feugiat magna elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus faucibus fringilla mauris, ut scelerisque odio accumsan facilisis. Sed vulputate eu odio sed venenatis. Nunc tincidunt accumsan neque luctus luctus. Maecenas gravida ornare lectus, ut elementum mauris tempor at. Nunc malesuada metus ac nisi porta, vitae mattis lacus tempus. Nam luctus velit dictum diam venenatis tempus. Nullam lacinia ex eget neque pulvinar posuere. Cras dictum purus in scelerisque gravida. Morbi fringilla convallis neque ac posuere. Donec eu erat bibendum, luctus leo sed, molestie justo. Aenean commodo eros et elit tincidunt, eu tempor ante tristique. Vestibulum mattis mauris a dui interdum, nec varius lacus finibus. Quisque euismod nec metus fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+Maecenas sit amet nunc dictum, blandit quam posuere, blandit magna. Morbi ex nisi, imperdiet vel pharetra et, placerat eu ligula. Ut et enim velit. Cras at tortor a lorem accumsan ultricies vitae sit amet mi. Aliquam erat volutpat. Aliquam tortor justo, interdum vel porttitor vitae, semper vel ligula. Nunc at varius ex. Sed cursus, purus sit amet cursus interdum, sapien felis aliquet tellus, non lobortis erat neque eu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac interdum tortor. Sed dignissim elit lectus, a consequat sem interdum sit amet.
+
+            </article>
+
+            <article id="blog">
+                <h1 class="page-header">Blog</h1>
+
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.set_date }}</a>
+                        <br>
+                        <h1>{{ post.title }}</h1>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </article>
+            <article id="resume">
+                <h1 class="page-header">Resume</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate risus a dolor suscipit ultricies. Nam ac erat augue. Phasellus auctor mi eget sem egestas, non pulvinar libero tristique. Duis facilisis at mauris in vulputate. Pellentesque eu arcu vitae leo pharetra blandit a ut arcu. Vestibulum turpis magna, iaculis vel tortor at, ornare ultricies enim. Mauris quis leo nec diam volutpat scelerisque in quis tellus. Pellentesque scelerisque neque dui, et ultricies urna euismod quis. Suspendisse at rhoncus leo. Maecenas fermentum nibh ipsum, id sagittis arcu pharetra id. Maecenas mauris mi, molestie quis pulvinar et, euismod sed neque.
+
+Morbi eu nibh ac augue scelerisque ultricies. Phasellus ac nulla a tellus elementum porttitor dictum ac dui. Aliquam condimentum ipsum et lobortis pellentesque. Mauris molestie, elit non vestibulum lacinia, elit libero hendrerit felis, eget imperdiet nibh magna non dui. Praesent a augue enim. Nulla placerat interdum odio, ac molestie lacus luctus ac. Aliquam facilisis ex sit amet viverra placerat. Cras molestie rutrum sapien fermentum euismod. Etiam fermentum non libero ut vestibulum. Ut blandit, dolor sed condimentum ultrices, libero ante elementum purus, ut rhoncus massa leo at eros. Etiam porta in nibh sit amet dapibus.
+
+Ut malesuada porta tellus, ac hendrerit dui congue eu. Phasellus nec odio risus. Sed vitae lobortis magna. Aenean non justo non lorem porttitor mollis. Aliquam erat volutpat. Nullam dolor velit, feugiat ut fermentum ut, blandit eget est. Nam nec auctor turpis, id laoreet tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vulputate dui ac diam vestibulum ullamcorper.
+
+Cras feugiat magna elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus faucibus fringilla mauris, ut scelerisque odio accumsan facilisis. Sed vulputate eu odio sed venenatis. Nunc tincidunt accumsan neque luctus luctus. Maecenas gravida ornare lectus, ut elementum mauris tempor at. Nunc malesuada metus ac nisi porta, vitae mattis lacus tempus. Nam luctus velit dictum diam venenatis tempus. Nullam lacinia ex eget neque pulvinar posuere. Cras dictum purus in scelerisque gravida. Morbi fringilla convallis neque ac posuere. Donec eu erat bibendum, luctus leo sed, molestie justo. Aenean commodo eros et elit tincidunt, eu tempor ante tristique. Vestibulum mattis mauris a dui interdum, nec varius lacus finibus. Quisque euismod nec metus fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+Maecenas sit amet nunc dictum, blandit quam posuere, blandit magna. Morbi ex nisi, imperdiet vel pharetra et, placerat eu ligula. Ut et enim velit. Cras at tortor a lorem accumsan ultricies vitae sit amet mi. Aliquam erat volutpat. Aliquam tortor justo, interdum vel porttitor vitae, semper vel ligula. Nunc at varius ex. Sed cursus, purus sit amet cursus interdum, sapien felis aliquet tellus, non lobortis erat neque eu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac interdum tortor. Sed dignissim elit lectus, a consequat sem interdum sit amet.
+
+            </article>
+            <article id="contact">
+                <h1 class="page-header">Contact</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate risus a dolor suscipit ultricies. Nam ac erat augue. Phasellus auctor mi eget sem egestas, non pulvinar libero tristique. Duis facilisis at mauris in vulputate. Pellentesque eu arcu vitae leo pharetra blandit a ut arcu. Vestibulum turpis magna, iaculis vel tortor at, ornare ultricies enim. Mauris quis leo nec diam volutpat scelerisque in quis tellus. Pellentesque scelerisque neque dui, et ultricies urna euismod quis. Suspendisse at rhoncus leo. Maecenas fermentum nibh ipsum, id sagittis arcu pharetra id. Maecenas mauris mi, molestie quis pulvinar et, euismod sed neque.
+
+Morbi eu nibh ac augue scelerisque ultricies. Phasellus ac nulla a tellus elementum porttitor dictum ac dui. Aliquam condimentum ipsum et lobortis pellentesque. Mauris molestie, elit non vestibulum lacinia, elit libero hendrerit felis, eget imperdiet nibh magna non dui. Praesent a augue enim. Nulla placerat interdum odio, ac molestie lacus luctus ac. Aliquam facilisis ex sit amet viverra placerat. Cras molestie rutrum sapien fermentum euismod. Etiam fermentum non libero ut vestibulum. Ut blandit, dolor sed condimentum ultrices, libero ante elementum purus, ut rhoncus massa leo at eros. Etiam porta in nibh sit amet dapibus.
+
+Ut malesuada porta tellus, ac hendrerit dui congue eu. Phasellus nec odio risus. Sed vitae lobortis magna. Aenean non justo non lorem porttitor mollis. Aliquam erat volutpat. Nullam dolor velit, feugiat ut fermentum ut, blandit eget est. Nam nec auctor turpis, id laoreet tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vulputate dui ac diam vestibulum ullamcorper.
+
+Cras feugiat magna elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus faucibus fringilla mauris, ut scelerisque odio accumsan facilisis. Sed vulputate eu odio sed venenatis. Nunc tincidunt accumsan neque luctus luctus. Maecenas gravida ornare lectus, ut elementum mauris tempor at. Nunc malesuada metus ac nisi porta, vitae mattis lacus tempus. Nam luctus velit dictum diam venenatis tempus. Nullam lacinia ex eget neque pulvinar posuere. Cras dictum purus in scelerisque gravida. Morbi fringilla convallis neque ac posuere. Donec eu erat bibendum, luctus leo sed, molestie justo. Aenean commodo eros et elit tincidunt, eu tempor ante tristique. Vestibulum mattis mauris a dui interdum, nec varius lacus finibus. Quisque euismod nec metus fringilla lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+Maecenas sit amet nunc dictum, blandit quam posuere, blandit magna. Morbi ex nisi, imperdiet vel pharetra et, placerat eu ligula. Ut et enim velit. Cras at tortor a lorem accumsan ultricies vitae sit amet mi. Aliquam erat volutpat. Aliquam tortor justo, interdum vel porttitor vitae, semper vel ligula. Nunc at varius ex. Sed cursus, purus sit amet cursus interdum, sapien felis aliquet tellus, non lobortis erat neque eu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac interdum tortor. Sed dignissim elit lectus, a consequat sem interdum sit amet.
+
+            </article>
+
+
+
+        </section>
+
+        <nav id="affix-nav" class="sidebar col-md-3">
+            <ul class="nav sidenav" data-spy="affix" data-offset-top="320">
+                <li class="active"><a href="#about_me">About Me</a>
+                </li>
+                <li><a href="#projects">Projects</a>
+                </li>
+                <li><a href="#blog">Blog</a>
+                </li>
+                <li><a href="#resume">Resume</a>
+                </li>
+                <li><a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
