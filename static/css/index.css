@@ -4,23 +4,31 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 .footer {
-  bottom: 0;
+  margin-top: 50px;
+  margin-bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #A7DBD8;
+  border-radius: 5px;
 }
 
 .text-muted {
   text-align: center;
 }
 
-/*#masthead {
-  background-color: #69D2E7;
-}*/
+#masthead {
+  background-color: #A7DBD8;
+
+}
+
+#masthead h1 {
+  /*color: #69D2E7;*/
+
+}
  
 /* First level of nav */
 .sidenav {
@@ -28,14 +36,14 @@ body {
   margin-bottom: 30px;
   padding-top:    10px;
   padding-bottom: 10px;
-  background-color: #f7f5fa;
+  background-color: #E0E4CC;
   border-radius: 5px;
 }
 
 /* All levels of nav */
 .sidebar .nav > li > a {
   display: block;
-  color: #716b7a;
+  color: #333;
   padding: 5px 20px;
 }
 .sidebar .nav > li > a:hover,
@@ -47,7 +55,7 @@ body {
 .sidebar .nav > .active:hover > a,
 .sidebar .nav > .active:focus > a {
   font-weight: bold;
-  color: #563d7c;
+  color: #333;
   background-color: transparent;
 }
 
