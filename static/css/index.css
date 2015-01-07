@@ -18,17 +18,29 @@ body {
   text-align: center;
 }
 
-ul.affix {
-  position: fixed; 
-  top: 0px;
-  left: 820px;
-  width: 200px;
+@media (min-width: 990px) {
+  ul.affix {
+    position: fixed; 
+    top: 0px;
+    left: 848px;
+    width: 150px;
+  }
 }
+
 ul.affix-top {
   position: static;
 }
 ul.affix-bottom {
   position: absolute;
+}
+
+@media (min-width: 1200px) {
+  ul.affix {
+    position: fixed; 
+    top: 0px;
+    left: 1100px;
+    width: 150px;
+  }
 }
  
 /* First level of nav */
@@ -39,6 +51,7 @@ ul.affix-bottom {
   padding-bottom: 10px;
   background-color: #f7f5fa;
   border-radius: 5px;
+  width: 150px;
 }
  
 /* All levels of nav */
