@@ -17,6 +17,10 @@ body {
 .text-muted {
   text-align: center;
 }
+
+/*#masthead {
+  background-color: #69D2E7;
+}*/
  
 /* First level of nav */
 .sidenav {
@@ -26,7 +30,6 @@ body {
   padding-bottom: 10px;
   background-color: #f7f5fa;
   border-radius: 5px;
-  width: 150px;
 }
 
 /* All levels of nav */
